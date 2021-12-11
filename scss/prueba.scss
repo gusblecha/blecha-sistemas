@@ -16,9 +16,10 @@ img     {
     padding-top: 10px;
     max-width:500px;
 }  
-.texto__descriptivo p {
+/*.texto__descriptivo p {
     margin-bottom: 1.5rem;
 }
+*/
 .service {
     grid-area: main;
     padding:10px;
@@ -71,25 +72,22 @@ form {
     border-spacing: 20px 20px;
     border: 1px solid #000;
 }
-.texto-mapa { 
+/*.texto-mapa { 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     object-fit: contain;
 }
-
+*/
 .navbar {
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #beb2da 0%, #fbc2eb 100%);
     top: 0px;
     margin-bottom:60px ;
 }
-.accordion-padding { 
-    padding:0px 300px 0px 300px;
-}
+
 .redes { 
-    margin: 20px;
-    background-color: wheat;
+    background-color: #beb2da;
     padding: 20px;
     display: flex;
     text-decoration: none;
@@ -133,3 +131,31 @@ $altura:300px;
     width: $anchura*2;
     height: $altura/2;
 }
+.accordion-item { 
+    background-color: #beb2da;
+}
+
+
+.mapa-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.mapa-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media (max-width: 512px) {
+    .texto-tabla-cuentas {
+      margin: auto;
+      border-collapse: separate;
+      border-spacing: 2px 2px;
+      border: 1px solid #000; 
+      font-size: 0.8em;}
+    }
