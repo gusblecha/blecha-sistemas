@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+   /* box-sizing: border-box;*/
 }
 //---------------import----------------//
  
@@ -16,10 +16,6 @@ img     {
     padding-top: 10px;
     max-width:500px;
 }  
-/*.texto__descriptivo p {
-    margin-bottom: 1.5rem;
-}
-*/
 .service {
     grid-area: main;
     padding:10px;
@@ -27,7 +23,6 @@ img     {
 .abonos { 
     padding: 10px;
 }
-
 
 /*=======================Animacion en tabla pagina abono.html=====================*/
 .texto-tabla { 
@@ -72,18 +67,14 @@ form {
     border-spacing: 20px 20px;
     border: 1px solid #000;
 }
-/*.texto-mapa { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
+.navbar-brand { 
+    font-size: 1.6rem !important;
 }
-*/
 .navbar {
-    background-image: linear-gradient(to top, #beb2da 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #beb2da 0%, #f0b9e0 100%);
     top: 0px;
     margin-bottom:60px ;
+    font-size: 1.5rem !important;
 }
 
 .redes { 
@@ -134,7 +125,10 @@ $altura:300px;
 .accordion-item { 
     background-color: #beb2da;
 }
-
+.row > * { 
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
 
 .mapa-responsive{
     overflow:hidden;
