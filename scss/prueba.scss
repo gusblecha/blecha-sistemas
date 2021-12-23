@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-   /* box-sizing: border-box;*/
 }
 //---------------import----------------//
  
@@ -9,7 +8,8 @@
 
 img     {
     width: 50%;
-    margin-top: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -18,27 +18,9 @@ img     {
 }  
 .service {
     grid-area: main;
-    padding:10px;
 }    
 .abonos { 
     padding: 10px;
-}
-
-/*=======================Animacion en tabla pagina abono.html=====================*/
-.texto-tabla { 
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    font-size: 1.3rem;
-    color: cyan;
-    padding: 20px;
-    background-color:green; 
-    border-spacing: 5px;
-    border-color: black;
-    margin-top: 1.5rem;
-    animation-duration:2s;
-    animation-name: blink;
-    animation-iteration-count: infinite; 
 }
 @keyframes blink {
     0% {
@@ -49,17 +31,15 @@ img     {
         }
 }
 form { 
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    padding: 0rem;
 }
 .derechos { 
+    color:antiquewhite;
     display:inline-block;
-}
-/*================hover en "todos los derechos reservados" de todas las paginas.html================*/
-.derechos:hover { 
-    transform: rotate(360deg);
-    transition: 3s;
+    padding: 10px;
 }
 .texto-tabla-cuentas { 
     margin: auto;
@@ -73,7 +53,6 @@ form {
 .navbar {
     background-image: linear-gradient(to top, #beb2da 0%, #f0b9e0 100%);
     top: 0px;
-    margin-bottom:60px ;
     font-size: 1.5rem !important;
 }
 
@@ -86,48 +65,14 @@ form {
     justify-content: space-evenly;
     object-fit: contain;
 }
-// prueba de bucle CON OPERACION//
-@for $nro from 1 to 6 {
-    h#{$nro} { 
-        font-size: (6em-$nro)* 0.4
-    }
-}
-//-----------Mixins en pagina Proyecto.html--------//
-@mixin caja ($fondo, $ancho, $alto) {
-    background-color: $fondo;
-    width: $ancho;
-    height: $alto;
-    margin: 20px;
-    padding: 20px;
+.img-redes { 
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
 }
 
-.cajas { 
-     margin-top: 60px;
-}
-.caja-1 {
-    @include caja(#da0c0c,160px,190px);
-
-}
-.caja-2 {
-    @include caja(green,80px,150px)
-}
-.caja-3 { 
-    @include caja(grey,100px,280px);
-}
-//-------------otra Operacion--------------//
-$anchura:300px;
-$altura:300px;
-.caja-4 { 
-    background-color: magenta;
-    width: $anchura*2;
-    height: $altura/2;
-}
 .accordion-item { 
     background-color: #beb2da;
-}
-.row > * { 
-    padding-right: 0px !important;
-    padding-left: 0px !important;
 }
 
 .mapa-responsive{
@@ -144,7 +89,17 @@ $altura:300px;
     width:100%;
     position:absolute;
 }
-
+.contacto-bloque { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 400px;
+}
+.p-contacto { 
+    display:flex;
+    justify-content: center;
+}
 @media (max-width: 512px) {
     .texto-tabla-cuentas {
       margin: auto;
@@ -152,4 +107,12 @@ $altura:300px;
       border-spacing: 2px 2px;
       border: 1px solid #000; 
       font-size: 0.8em;}
+    .contacto-bloque { 
+          padding-left: 5vw;
+          padding-right: 5vw;
+      }
+    .img-redes { 
+        flex-direction: column;
     }
+    }
+

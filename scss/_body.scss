@@ -1,14 +1,21 @@
-$main-color:rgb(16, 24, 7);
+$main-color:rgb(244, 247, 241);
 
 .body-style   {
     font-family: 'Comfortaa', cursive;
-    background-color: #c7f79b;
-    background-image: url(../public/img/fondo4.png);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    }  
+}  
+h1 { 
+    color:#beb2da;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
 h2{
-    color: #a70000;
+    color: rgb(188, 235, 161);
     font: 46pt/50pt;
     font-weight: 800;
     font-stretch: normal;
@@ -19,10 +26,9 @@ h2{
     margin-top: 40px;
     font-size: 1.3rem;
     font-weight: 700;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
     color: $main-color;
 } 
-.cajas {
-    margin-top:60px;
-}
 

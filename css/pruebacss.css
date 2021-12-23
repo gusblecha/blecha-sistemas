@@ -1,17 +1,22 @@
 * {
   margin: 0;
-  padding: 0;
-  /* box-sizing: border-box;*/ }
+  padding: 0; }
 
 .body-style {
   font-family: 'Comfortaa', cursive;
-  background-color: #c7f79b;
-  background-image: url(../public/img/fondo4.png);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover; }
 
+h1 {
+  color: #beb2da;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em; }
+
 h2 {
-  color: #a70000;
+  color: #bceba1;
   font: 46pt/50pt;
   font-weight: 800;
   font-stretch: normal;
@@ -22,15 +27,15 @@ h2 {
   margin-top: 40px;
   font-size: 1.3rem;
   font-weight: 700;
-  padding: 40px;
-  color: #101807; }
-
-.cajas {
-  margin-top: 60px; }
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  color: #f4f7f1; }
 
 img {
   width: 50%;
-  margin-top: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -38,27 +43,10 @@ img {
   max-width: 500px; }
 
 .service {
-  grid-area: main;
-  padding: 10px; }
+  grid-area: main; }
 
 .abonos {
   padding: 10px; }
-
-/*=======================Animacion en tabla pagina abono.html=====================*/
-.texto-tabla {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.3rem;
-  color: cyan;
-  padding: 20px;
-  background-color: green;
-  border-spacing: 5px;
-  border-color: black;
-  margin-top: 1.5rem;
-  animation-duration: 2s;
-  animation-name: blink;
-  animation-iteration-count: infinite; }
 
 @keyframes blink {
   0% {
@@ -67,17 +55,15 @@ img {
     opacity: 1; } }
 
 form {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 2rem; }
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  padding: 0rem; }
 
 .derechos {
-  display: inline-block; }
-
-/*================hover en "todos los derechos reservados" de todas las paginas.html================*/
-.derechos:hover {
-  transform: rotate(360deg);
-  transition: 3s; }
+  color: antiquewhite;
+  display: inline-block;
+  padding: 10px; }
 
 .texto-tabla-cuentas {
   margin: auto;
@@ -91,7 +77,6 @@ form {
 .navbar {
   background-image: linear-gradient(to top, #beb2da 0%, #f0b9e0 100%);
   top: 0px;
-  margin-bottom: 60px;
   font-size: 1.5rem !important; }
 
 .redes {
@@ -103,56 +88,13 @@ form {
   justify-content: space-evenly;
   object-fit: contain; }
 
-h1 {
-  font-size: 2em; }
-
-h2 {
-  font-size: 1.6em; }
-
-h3 {
-  font-size: 1.2em; }
-
-h4 {
-  font-size: 0.8em; }
-
-h5 {
-  font-size: 0.4em; }
-
-.cajas {
-  margin-top: 60px; }
-
-.caja-1 {
-  background-color: #da0c0c;
-  width: 160px;
-  height: 190px;
-  margin: 20px;
-  padding: 20px; }
-
-.caja-2 {
-  background-color: green;
-  width: 80px;
-  height: 150px;
-  margin: 20px;
-  padding: 20px; }
-
-.caja-3 {
-  background-color: grey;
-  width: 100px;
-  height: 280px;
-  margin: 20px;
-  padding: 20px; }
-
-.caja-4 {
-  background-color: magenta;
-  width: 600px;
-  height: 150px; }
+.img-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 .accordion-item {
   background-color: #beb2da; }
-
-.row > * {
-  padding-right: 0px !important;
-  padding-left: 0px !important; }
 
 .mapa-responsive {
   overflow: hidden;
@@ -167,10 +109,26 @@ h5 {
   width: 100%;
   position: absolute; }
 
+.contacto-bloque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 400px; }
+
+.p-contacto {
+  display: flex;
+  justify-content: center; }
+
 @media (max-width: 512px) {
   .texto-tabla-cuentas {
     margin: auto;
     border-collapse: separate;
     border-spacing: 2px 2px;
     border: 1px solid #000;
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+  .contacto-bloque {
+    padding-left: 5vw;
+    padding-right: 5vw; }
+  .img-redes {
+    flex-direction: column; } }
